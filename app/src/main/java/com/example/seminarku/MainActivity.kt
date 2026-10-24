@@ -192,18 +192,7 @@ private fun BiayaRow(label: String, amount: String, emphasized: Boolean = false)
     }
 }
 
-@Composable
-private fun DaftarPeserta(daftarPeserta: List<Peserta>, onHapus: (Peserta) -> Unit) {
-    SectionTitle(stringResource(R.string.section_participants), stringResource(R.string.participant_count, daftarPeserta.size))
-    if (daftarPeserta.isEmpty()) {
-        Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
-            Column(Modifier.fillMaxWidth().padding(20.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(stringResource(R.string.empty_participants), fontWeight = FontWeight.SemiBold)
-                Text(stringResource(R.string.empty_participants_hint), color = MaterialTheme.colorScheme.onSurfaceVariant, style = MaterialTheme.typography.bodySmall)
-            }
-        }
-    } else daftarPeserta.forEach { peserta -> KartuPeserta(peserta, onHapus = { onHapus(peserta) }) }
-}
+
 
 @Composable
 private fun KartuPeserta(peserta: Peserta, onHapus: () -> Unit) {
