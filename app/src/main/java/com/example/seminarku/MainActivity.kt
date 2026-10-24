@@ -202,7 +202,7 @@ private fun DaftarPeserta(daftarPeserta: List<Peserta>, onHapus: (Peserta) -> Un
                 Text(stringResource(R.string.empty_participants_hint), color = MaterialTheme.colorScheme.onSurfaceVariant, style = MaterialTheme.typography.bodySmall)
             }
         }
-    } else daftarPeserta.forEach { peserta -> KartuPeserta(peserta, onHapus = { onHapus(peserta) }) }
+   
 }
 
 @Composable
