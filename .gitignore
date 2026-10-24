@@ -1,0 +1,30 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Gradle dan hasil build
+.gradle/
+build/
+**/build/
+
+# Konfigurasi lokal
+
+
+# Android Studio
+.idea/
+
+# Log crash JVM
+hs_err_pid*.log
+replay_pid*.log
