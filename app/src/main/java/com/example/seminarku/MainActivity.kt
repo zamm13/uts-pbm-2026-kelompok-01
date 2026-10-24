@@ -213,7 +213,14 @@ private fun KartuPeserta(peserta: Peserta, onHapus: () -> Unit) {
                 Text(peserta.nama, fontWeight = FontWeight.Bold, style = MaterialTheme.typography.titleSmall)
                 TextButton(onClick = onHapus) { Text(stringResource(R.string.button_delete), color = MaterialTheme.colorScheme.error) }
             }
-            
+            Text(stringResource(R.string.participant_nim, peserta.nim), style = MaterialTheme.typography.bodySmall)
+            Text(stringResource(R.string.participant_class, peserta.kelas), style = MaterialTheme.typography.bodySmall)
+            Text(stringResource(if (peserta.anggotaHimpunan) R.string.member else R.string.non_member), style = MaterialTheme.typography.bodySmall)
+            Text(stringResource(if (peserta.sertifikatCetak) R.string.certificate_selected else R.string.certificate_not_selected), style = MaterialTheme.typography.bodySmall)
+            Text(stringResource(R.string.participant_fee, formatRupiah(hitungBiaya(peserta))), color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.SemiBold, style = MaterialTheme.typography.bodySmall)
+        }
+    }
+}
 
 @Composable
 private fun RingkasanSeminar(daftarPeserta: List<Peserta>, kelas: List<String>) {
