@@ -206,13 +206,7 @@ private fun DaftarPeserta(daftarPeserta: List<Peserta>, onHapus: (Peserta) -> Un
 }
 
 @Composable
-private fun KartuPeserta(peserta: Peserta, onHapus: () -> Unit) {
-    Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
-        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
-                Text(peserta.nama, fontWeight = FontWeight.Bold, style = MaterialTheme.typography.titleSmall)
-                TextButton(onClick = onHapus) { Text(stringResource(R.string.button_delete), color = MaterialTheme.colorScheme.error) }
-            }
+
             Text(stringResource(R.string.participant_nim, peserta.nim), style = MaterialTheme.typography.bodySmall)
             Text(stringResource(R.string.participant_class, peserta.kelas), style = MaterialTheme.typography.bodySmall)
             Text(stringResource(if (peserta.anggotaHimpunan) R.string.member else R.string.non_member), style = MaterialTheme.typography.bodySmall)
