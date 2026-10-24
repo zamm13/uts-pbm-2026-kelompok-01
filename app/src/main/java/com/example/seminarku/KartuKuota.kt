@@ -38,7 +38,6 @@ fun KartuKuota(
         sisaKuota <= 2 -> stringResource(R.string.class_almost_full)
         else -> stringResource(R.string.class_available)
     }
-
     Card(
         modifier = modifier
             .fillMaxWidth()
