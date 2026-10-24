@@ -52,7 +52,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent { SeminarKuTheme { PendaftaranSeminarScreen() } }
     }
-    
+}
+
 @Composable
 fun PendaftaranSeminarScreen(modifier: Modifier = Modifier) {
     val kelas = listOf(
