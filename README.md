@@ -1,4 +1,4 @@
-SeminarKu — Aplikasi Pendaftaran Seminar Himpunan
+**SeminarKu — Aplikasi Pendaftaran Seminar Himpunan**
 SeminarKu adalah aplikasi Android satu layar untuk membantu proses pendaftaran peserta seminar Himpunan Mahasiswa Teknologi Informasi. Aplikasi ini dibuat menggunakan Kotlin dan Jetpack Compose sebagai tugas Ujian Tengah Semester (UTS) mata kuliah Pemrograman Berbasis Mobile Tahun 2026.
 
 Aplikasi mengintegrasikan formulir pendaftaran, pemilihan kelas, perhitungan biaya, informasi kuota, daftar peserta, dan ringkasan pendaftaran dalam satu layar.
